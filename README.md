@@ -1,13 +1,13 @@
-# Project Name
+# Album Art Service Generator
 
 > Project description
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- https://github.com/teamName/repo
+- https://github.com/teamName/repo
+- https://github.com/teamName/repo
+- https://github.com/teamName/repo
 
 ## Table of Contents
 
@@ -36,4 +36,3 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-
