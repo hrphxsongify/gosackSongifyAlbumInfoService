@@ -1,0 +1,39 @@
+# Start with the master branch
+
+All feature branches are created off the latest code state of a project. This guide assumes this is maintained and updated in the master branch.
+
+`git checkout master`
+`git fetch origin`
+`git reset --hard origin/master`
+
+This switches the repo to the master branch, pulls the latest commits and resets the repo's local copy of master to match the latest version.
+
+## Create a new-branch
+
+Use a separate branch for each feature or issue you work on. After creating a branch, check it out locally so that any changes you make will be on that branch.
+
+`git checkout -b new-feature`
+This checks out a branch called new-feature based on master, and the -b flag tells Git to create the branch if it doesn’t already exist.
+
+## Update, add, commit, and push changes
+
+On this branch, edit, stage, and commit changes in the usual fashion, building up the feature with as many commits as necessary. Work on the feature and make commits like you would any time you use Git. When ready, push your commits, updating the feature branch on Bitbucket.
+
+`git status`
+`git add <some-file>`
+`git commit`
+
+## Push feature branch to remote
+
+It’s a good idea to push the feature branch up to the central repository. This serves as a convenient backup, when collaborating with other developers, this would give them access to view commits to the new branch.
+
+`git push -u origin new-feature`
+This command pushes new-feature to the central repository (origin), and the -u flag adds it as a remote tracking branch. After setting up the tracking branch, git push can be invoked without any parameters to automatically push the new-feature branch to the central repository. To get feedback on the new feature branch, create a pull request in a repository management solution like Bitbucket Cloud or Bitbucket Server. From there, you can add reviewers and make sure everything is good to go before merging.
+
+## Resolve feedback
+
+Now teammates comment and approve the pushed commits. Resolve their comments locally, commit, and push the suggested changes to Bitbucket. Your updates appear in the pull request.
+
+## Merge your pull request
+
+Before you merge, you may have to resolve merge conflicts if others have made changes to the repo. When your pull request is approved and conflict-free, you can add your code to the master branch. Merge from the pull request in Bitbucket.

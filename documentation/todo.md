@@ -19,10 +19,19 @@
 - Standups
 - Reflection or retrospective
 
-* continuous integration
+- Continuous Integration
   - Jest
   - Ensyme
   - CircleCI
+
+## Monolithic Arch
+
+--client
+has everything that will be compiled
+
+-- everything that is served is in public
+
+service: something that spans the full-stack that provides a piece of functionality.
 
 [X] Set up Eslint for airbnb, write this up (for WINDOWS)
 
