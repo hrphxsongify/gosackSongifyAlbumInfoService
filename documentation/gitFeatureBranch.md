@@ -34,6 +34,6 @@ This command pushes new-feature to the central repository (origin), and the -u f
 
 Now teammates comment and approve the pushed commits. Resolve their comments locally, commit, and push the suggested changes to Bitbucket. Your updates appear in the pull request.
 
-## Merge your pull request
+##Merge your pull request
 
 Before you merge, you may have to resolve merge conflicts if others have made changes to the repo. When your pull request is approved and conflict-free, you can add your code to the master branch. Merge from the pull request in Bitbucket.
