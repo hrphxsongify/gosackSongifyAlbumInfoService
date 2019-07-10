@@ -4,6 +4,7 @@
   "description": "album service",
   "main": "./src/index.jsx",
   "scripts": {
+    "test": "jest",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon ./server.js",
     "lint": "eslint src -c .eslintrc.json --ext js,jsx"
