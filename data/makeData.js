@@ -34,5 +34,5 @@ for (let i = 0; i < 100; i++) {
 }
 fs.writeFile('albums.json', JSON.stringify(albums), err => {
   if (err) throw err;
-  console.log("It's saved!");
+  console.log('Saved');
 });
