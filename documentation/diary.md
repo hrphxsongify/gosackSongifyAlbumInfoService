@@ -1,9 +1,16 @@
 # Developer Log for Songify
 
+## 7/11/19
+
+Was able to create a basic script that will generate fake 'album' data with faker.
+Used the following command to populate the database with the fake data.
+
+`C:\Program Files\MongoDB\Server\4.0\bin\mongoimport.exe' --host localhost --port 27017 --db albums --drop --jsonArray --file .\albums.json`
+
 - [ ] Document all initial npm dependencies required with some description.
-- [ ] Get a basic jest test to run
-- [ ] Set up Circle CI to run when a pull request is made to the Github repo.
-- [ ] Document Feature branch workflow for git.
+- [x] Get a basic jest test to run
+- [x] Set up Circle CI to run when a pull request is made to the Github repo.
+- [x] Document Feature branch workflow for git.
 
 ## 7/3/19
 
