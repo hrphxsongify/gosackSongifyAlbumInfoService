@@ -4,20 +4,18 @@ const express = require('express');
 
 const app = express();
 
-const Album = require('./data/test');
+const Album = require('./data/database');
 
-const PORT = 3000;
-// app.use(express.static(`${__dirname}/dist`));
+const PORT = 3002;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', async (req, res) => {
-  // res.send(await Album.find({}));
+app.get('/albums', async (req, res) => {
+  res.send(await Album.find({}).exec());
 });
 
-app.post('/', (req, res) => {
-  console.log(req.body);
-  res.send({ message: 'post ok' });
+app.get('/albums/:albumId', async (req, res) => {
+  res.send(await Album.findOne({ id: parseInt(req.params.albumId, 10) }).exec());
 });
 
 app.listen(PORT, () => {

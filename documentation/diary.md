@@ -1,5 +1,9 @@
 # Developer Log for Songify
 
+# 7/13/19
+
+James helped me get unstuck today. Turns out I had the majority of what was needed for my database code, but had some redundancy that was chewing up my data. Made some routes that return all albums and also returns an arbitrary album by id. Feels really good after the frustration of yesterday.
+
 # 7/12/19
 
 Today, I need to get the database sorted out.
