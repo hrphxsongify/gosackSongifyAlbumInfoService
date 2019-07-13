@@ -4,11 +4,11 @@
 
 Today, I need to get the database sorted out.
 
-- [ ] A schema
-- [ ] A model
-- [ ] Getting data into the model (sort of done)
+- [x] A schema
+- [x] A model
+- [x] Getting data into the model (sort of done)
 - [ ] Coming up with routes for querying the data
-- [ ] What does the initial page-load query look like?
+- [x] What does the initial page-load query look like?
 - [ ] Start working on a rough proxy
 
 Was not able to get very much sorted today due to the unexpected difficulty of connecting to a pre-populated database. I am trying not to dive into 'knowing everything,' on the other hand, I can't just 'write code and trust that it works under the hood' if, you know, I have no freaking idea what to write because everything that I do write, fails. Will start from the ground up tomorrow and will complete a mongo tutorial. So sick of burning up days here.
