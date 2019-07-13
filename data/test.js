@@ -1,12 +1,27 @@
+// import { Router } from 'express';
+
 const mongoose = require('mongoose');
+
+// const router = Router();
 
 // connect to database
 const connect = () => {
   return mongoose.connect('mongodb://localhost:27017/albums');
 };
 
+// const connection = mongoose.createConnection('mongodb://localhost:27017/albums', {
+//   useNewUrlParser: true
+// });
+
+// connection.useDb('albums');
+
+// const Album = connection.model('albums');
+
+// schema
+//
+
 // create schema
-const testAlbums = new mongoose.Schema({
+const albumSchema = new mongoose.Schema({
   albumId: Number,
   albumArtId: Number,
   albumTitle: {
@@ -18,20 +33,13 @@ const testAlbums = new mongoose.Schema({
   genre: String
 });
 
-// returns a mongo model - model, schema
-const Album = mongoose.model('testAlbum', testAlbums);
+// // returns a mongo model - model, schema
+const Album = mongoose.model('Album', albumSchema, 'albums');
 
 connect()
   .then(async connection => {
-    // create album
-    const album = await Album.create({
-      albumId: 001,
-      albumArtId: 001,
-      albumTitle: 'In Through the Out Door',
-      songs: { 1: 'The Crunge' },
-      yearCreated: 1975,
-      genre: 'Rock'
-    });
-    console.log(album);
+    await mongoose.connection.db;
   })
   .catch(e => console.error(e));
+
+module.exports = Album;

@@ -13,7 +13,7 @@
 
   - Prioritize
   - Evaluate to ensure specificity
-  - Estimate tickets neat the top of the list
+  - Estimate tickets near the top of the list
   - Pick tickets to commit to doing this sprint
 
 - Standups
@@ -26,10 +26,11 @@
 
 ## Monolithic Arch
 
---client
+### client
 has everything that will be compiled
 
--- everything that is served is in public
+### public
+everything that is served is in public
 
 service: something that spans the full-stack that provides a piece of functionality.
 
@@ -52,6 +53,6 @@ service: something that spans the full-stack that provides a piece of functional
 
 Keep Running narrative of what was accomplished as the project moves on so this can be replicated later when doing ones own work.
 
-```git stache
-
+```
+git stache
 ```
