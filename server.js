@@ -11,7 +11,7 @@ const Album = require('./data/database');
 const PORT = 3002;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.use(express.static('dist'));
+app.use(express.static('dist'));
 
 app.get('/script', async (req, res) => {
   res.sendFile(await path.join(__dirname, 'dist/bundle.js'));
