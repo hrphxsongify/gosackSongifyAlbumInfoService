@@ -1,13 +1,12 @@
 # Album Art Service Generator
 
-> Project description
+> This microservice serves album metadata to a music player front end.
 
 ## Related Projects
 
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
-- https://github.com/teamName/repo
+- https://github.com/hrphxsongify/woodsAlbumArt
+- https://github.com/hrphxsongify/gosackSongifyProxy
+- https://github.com/hrphxsongify/woodsAlbumArt
 
 ## Table of Contents
 
@@ -17,16 +16,21 @@
 
 ## Usage
 
-> Some usage instructions
+Run Unit Tests: `npm test`
+
+Seed Database: `npm run seed`
+
+Test Front End : `npm run react-dev'
+
+Run Server (PORT 3002): `npm run server-dev`
 
 ## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
+TBD
 
 ## Development
+
+TBD
 
 ### Installing Dependencies
 
