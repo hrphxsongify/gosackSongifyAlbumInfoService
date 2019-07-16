@@ -5,12 +5,12 @@ const path = require('path');
 const albums = [];
 
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 for (let i = 0; i < 100; i++) {
   const album = {};
-  album.tracks = {};
+  album.tracks = [];
 
   // id
   album.id = i;
@@ -20,12 +20,18 @@ for (let i = 0; i < 100; i++) {
   album.artist = `${faker.company.catchPhraseAdjective()} ${faker.company.catchPhraseNoun()}`;
 
   // songs
-  for (let i = 0; i < getRandomArbitrary(2, 12); i++) {
-    album.tracks[i + 1] = `${faker.company.bs()}`;
+  for (let j = 0; j < getRandomArbitrary(2, 12); j++) {
+    const track = {};
+    track.title = `${faker.company.bs()}`;
+    track.number = j + 1;
+    track.length = `${getRandomArbitrary(1, 19)}:${getRandomArbitrary(10, 59)}`;
+    track.explicit = getRandomArbitrary(0, 2);
+    track.popularity = getRandomArbitrary(0, 2);
+    album.tracks.push(track);
   }
 
   // year
-  album.year = Math.floor(getRandomArbitrary(1921, 2019));
+  album.year = Math.floor(getRandomArbitrary(1970, 2019));
 
   // genre
   album.genre = `${faker.name.jobDescriptor()}`;
