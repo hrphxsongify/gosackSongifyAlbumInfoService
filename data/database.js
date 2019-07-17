@@ -19,7 +19,3 @@ const albumSchema = new mongoose.Schema({
 const Album = mongoose.model('Album', albumSchema, 'albums');
 
 module.exports = Album;
-
-// Album.find({})
-//   .then(data => console.log(data))
-//   .catch(e => console.log(e));
