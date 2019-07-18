@@ -1,3 +1,5 @@
+const cors = require('cors');
+
 const bodyParser = require('body-parser');
 
 const path = require('path');
@@ -6,30 +8,12 @@ const express = require('express');
 
 const app = express();
 
-const Album = require('./data/database');
-
-const PORT = 3002;
+const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static('dist'));
+app.use(cors());
 
-app.get('/script', async (req, res) => {
-  res.sendFile(await path.join(__dirname, 'dist/bundle.js'));
-});
-
-app.get('/style', async (req, res) => {
-  res.sendFile(await path.join(__dirname, 'dist/style.css'));
-});
-
-app.get('/albums', async (req, res) => {
-  res.send(await Album.find({}).exec());
-});
-
-app.get('/api/albums/:albumId', async (req, res) => {
-  res.send(await Album.findOne({ id: parseInt(req.params.albumId, 10) }).exec());
-});
-
-app.get('/albums*', (req, res) => {
+app.get('/:albumId', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 

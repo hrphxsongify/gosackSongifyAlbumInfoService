@@ -1,6 +1,6 @@
-# Album Art Service Generator
+# Songify Proxy
 
-> This microservice serves album metadata to a music player front end.
+> This proxy takes in components from the album art and album metadata services and displays them on the page.
 
 ## Related Projects
 
