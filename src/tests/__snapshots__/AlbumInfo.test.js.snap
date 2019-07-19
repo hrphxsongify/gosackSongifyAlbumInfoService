@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumInfo should do some shit 1`] = `
+<div
+  className="album__info"
+>
+  <div
+    className="album__info__art"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </div>
+  <div
+    className="album__info__meta"
+  >
+    <div
+      className="album__year"
+    >
+      0
+    </div>
+    <div
+      className="album__name"
+    />
+    <div
+      className="album__actions"
+    >
+      <button
+        className="button-light save"
+      >
+        Save
+      </button>
+      <button
+        className="button-light more"
+      >
+        <i
+          className="ion-ios-more"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
