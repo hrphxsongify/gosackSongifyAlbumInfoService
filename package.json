@@ -41,7 +41,7 @@
     "mongoimport": "^1.0.6",
     "prettier": "^1.18.2",
     "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
